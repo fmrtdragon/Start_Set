@@ -1,7 +1,8 @@
-export AI_log=/home/dragon/AI/log
-export AI_result=/home/dragon/AI/result
-export AI_skill=/home/dragon/AI/skill
-export AI_script=/home/dragon/AI/script
-export AI_PATH=/home/dragon/gestalt-tests/assistant/pi-mono
-export SOFT_HELP=/home/dragon/SoftWare/Help
+export AI_log=~/AI/log
+export AI_result=~/AI/result
+export AI_skill=~/AI/skill
+export AI_script=~/AI/script
+export AI_PATH=~/gestalt-tests/assistant/pi-mono
+export SOFT_HELP=~/SoftWare/Help
+export git_demand_record=~/git_demand_record
 

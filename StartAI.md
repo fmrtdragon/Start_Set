@@ -1,9 +1,10 @@
 # StartAI — 会话日志记录指令
 
 > 依赖环境变量：执行 `source ~/Start_Set/Set_Path.sh` 导入所需变量。
-> - `$AI_log`：日志根目录（`/home/dragon/AI/log`）
-> - `$AI_script`：脚本存放根目录（`/home/dragon/AI/script`）
-> - `$SOFT_HELP`：软件 Help 文档根目录（`/home/dragon/SoftWare/Help`）
+> - `$AI_log`：日志根目录（`~/AI/log`）
+> - `$AI_script`：脚本存放根目录（`~/AI/script`）
+> - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
+> - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
 
 ## 核心指令
 
@@ -223,3 +224,7 @@ $AI_log/
 - 统一使用 SSH 方式连接 GitHub
 - 仓库名默认使用文件夹名称
 - SSH 地址格式：`git@github.com:fmrtdragon/<仓库名>.git`
+- **Git 操作记录**：每次执行 git 操作命令（commit、push、pull、merge、rebase 等）后，将执行的命令追加记录到 `$git_demand_record/` 下当天的日志文件中
+  - 目录结构：`$git_demand_record/YYYY/MM/DD/git_log.md`，同一天追加到同一文件
+  - 记录格式：时间戳 + 仓库路径 + 完整命令 + 操作结果摘要
+  - 目的：确保所有 git 操作可追溯
