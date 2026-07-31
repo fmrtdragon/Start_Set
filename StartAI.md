@@ -7,14 +7,23 @@
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
 > - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
 
-> **Skills 技能文件**：`$Start_Set/skills/` 下按触发条件加载对应技能文件：
-> - `script-development.md`：需编写/调试/修改脚本时加载
-> - `git-workflow.md`：执行 Git 操作时加载
-> - `doc-processing.md`：处理 MD 表格/图片/CSV/Verilog 格式化等时加载
-
 ## 核心指令
 
 **每次会话中的所有问题和回答，必须追加记录到 `$AI_log/` 下当天的日志文件中，包含问题、答案和思考过程。每天顺序写入同一个文件，不在每次会话时创建新文件。**
+
+## 技能加载机制
+
+`$Start_Set/skills/` 下存放按领域分类的技能文件。AI 不得在每次会话中无条件加载全部 Skill，而是根据当前任务的触发条件按需加载。
+
+- Skill 文件顶部包含 `**触发条件**` 字段，声明该技能的适用场景
+- 用户请求到达后，先判定该请求是否命中某个 Skill 的触发条件
+- 命中则读取对应 Skill 文件并按其中规则执行，未命中则忽略
+- 一个任务可能同时命中多个 Skill，此时全部加载
+- 当前已有的 Skill 及触发条件：
+  - `script-development.md`：编写/调试/修改脚本
+  - `git-workflow.md`：执行 Git 操作（commit/push/pull/merge 等）
+  - `doc-processing.md`：处理 MD 表格/图片下载/CSV 转换/Verilog 格式化等
+- 新增 Skill 时必须在文件中声明触发条件，并在此处同步更新列表
 
 ---
 
