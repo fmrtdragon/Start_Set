@@ -1,6 +1,7 @@
 # StartAI — 会话日志记录指令
 
-> 依赖环境变量：执行 `source ~/Start_Set/Set_Path.sh` 导入所需变量。
+> 依赖环境变量：执行 `source $Start_Set/Set_Path.sh` 导入所需变量。
+> - `$Start_Set`：Start_Set 配置目录（`~/Start_Set`）
 > - `$AI_log`：日志根目录（`~/AI/log`）
 > - `$AI_script`：脚本存放根目录（`~/AI/scripts`）
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
@@ -239,5 +240,5 @@ $AI_log/
   - GitHub 仓库名（如 `fmrtdragon`）不计入个人信息
 - **Git 错误处理**：当 Git 操作遇到错误时（如远端仓库不存在、push 被拒绝、认证失败等），不得自行决定补救措施（如创建远端仓库、强制推送、修改 remote 等），必须先向用户报告错误并等待确认后再继续
 - **即时推送**：当修改涉及以下目录下的文件时，commit 后应主动执行 push，无需等待用户单独下推送指令。但隐私检查规则（上述）仍然适用：若发现个人信息，必须先向用户确认
-  - `~/Start_Set/`
-  - `~/AI/scripts/`
+  - `$Start_Set/`
+  - `$AI_script/`
