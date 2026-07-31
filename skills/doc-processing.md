@@ -2,6 +2,14 @@
 
 Markdown/CSV/JSON 等格式文件的读取、转换、合并、图片处理规范。
 
+**触发条件**：用户要求以下任一操作时激活：
+- 读取/分析/解析 Markdown 表格
+- 合并多个 Markdown 表格
+- Markdown 转 CSV
+- 下载 MD 中引用的在线图片并转为本地引用
+- 格式化 Verilog/SystemVerilog 代码
+- 处理 JSON/YAML/CSV 等结构化数据文件
+
 ## 1. 文件探索
 
 ### 1.1 目录分析

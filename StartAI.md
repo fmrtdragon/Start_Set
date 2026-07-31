@@ -7,6 +7,11 @@
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
 > - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
 
+> **Skills 技能文件**：`$Start_Set/skills/` 下按触发条件加载对应技能文件：
+> - `script-development.md`：需编写/调试/修改脚本时加载
+> - `git-workflow.md`：执行 Git 操作时加载
+> - `doc-processing.md`：处理 MD 表格/图片/CSV/Verilog 格式化等时加载
+
 ## 核心指令
 
 **每次会话中的所有问题和回答，必须追加记录到 `$AI_log/` 下当天的日志文件中，包含问题、答案和思考过程。每天顺序写入同一个文件，不在每次会话时创建新文件。**

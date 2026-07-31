@@ -2,6 +2,8 @@
 
 代码提交、推送、远程仓库管理的操作规范。
 
+**触发条件**：用户要求执行 commit、push、pull、merge、rebase、remote 等 Git 操作，或涉及向 GitHub 推送代码时激活。
+
 ## 1. 连接方式
 
 - 统一使用 SSH 连接 GitHub：`git@github.com:fmrtdragon/<仓库名>.git`
