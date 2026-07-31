@@ -2,7 +2,7 @@
 
 > 依赖环境变量：执行 `source ~/Start_Set/Set_Path.sh` 导入所需变量。
 > - `$AI_log`：日志根目录（`~/AI/log`）
-> - `$AI_script`：脚本存放根目录（`~/AI/script`）
+> - `$AI_script`：脚本存放根目录（`~/AI/scripts`）
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
 > - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
 
