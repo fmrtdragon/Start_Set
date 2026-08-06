@@ -6,6 +6,8 @@
 > - `$AI_script`：脚本存放根目录（`~/AI/scripts`）
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
 > - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
+> - `$Temp_Test`：临时测试目录（`~/Test_Dir`）
+> - `$Temp_Test`：临时测试目录（`~/Test_Dir`）
 
 ## 核心指令
 
