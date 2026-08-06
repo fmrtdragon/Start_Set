@@ -7,4 +7,5 @@ export SOFT_HELP=~/SoftWare/Help
 export Start_Set=~/Start_Set
 export git_demand_record=~/git_demand_record
 export Temp_Test=~/Test_Dir
+export Fun_Open=~/Start_Set/skills/function_switch.md
 
