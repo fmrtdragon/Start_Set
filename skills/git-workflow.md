@@ -11,9 +11,11 @@
 
 ## 2. 操作记录
 
-- 每次执行 git 命令（commit、push、pull、merge、rebase 等）后，追加记录到 `$git_demand_record/YYYY/MM/DD/git_log.md`
+- 每次执行 git 命令（commit、push、pull、merge、rebase 等）后，**立即**追加记录到 `$git_demand_record/YYYY/MM/DD/git_log.md`
+- **不可延迟到会话结束时批量补记**，每条 commit + push 对应一条记录
+- 同一轮对话中的多次提交必须逐条记录，不可合并或省略
 - 记录内容：时间戳 + 仓库路径 + 完整命令 + 操作结果摘要
-- 同一天追加到同一文件
+- 回复用户前，确认 `$git_demand_record/` 中已包含本轮所有操作记录
 
 ## 3. 推送前检查
 
