@@ -7,7 +7,7 @@
 
 ```bash
 TEST_INTERMEDIATE_SCRIPT=on    # 是否对中间任务产生的脚本进行功能测试
-TEST_CONFIDENCE=90             # 测试可信度要求（百分比，1-100）
+TEST_CONFIDENCE=90             # 测试可信度（功能覆盖率评判阈值，由 AI 综合功能点/参数空间/分支路径三维度评估）
 ARCHIVE_INTERMEDIATE_SCRIPT=on # 是否将中间任务脚本归档到 $AI_script/
 ```
 
