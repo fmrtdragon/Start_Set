@@ -7,7 +7,18 @@
 > - `$SOFT_HELP`：软件 Help 文档根目录（`~/SoftWare/Help`）
 > - `$git_demand_record`：Git 操作记录根目录（`~/git_demand_record`）
 > - `$Temp_Test`：临时测试目录（`~/Test_Dir`）
-> - `$Temp_Test`：临时测试目录（`~/Test_Dir`）
+
+### 环境变量管理
+
+- **新增环境变量必须写入 `$Start_Set/Set_Path.sh`**，格式为 `export <变量名>=<路径>`
+- **同时必须在本文档（`StartAI.md`）的环境变量列表中追加对应条目**，注明变量名和用途
+- 两份文件（`Set_Path.sh` 和 `StartAI.md`）保持同步，任意新增变量后同时更新两者
+
+### 环境变量管理
+
+- **新增环境变量必须写入 `$Start_Set/Set_Path.sh`**，格式为 `export <变量名>=<路径>`
+- **同时必须在本文档（`StartAI.md`）的环境变量列表中追加对应条目**，注明变量名和用途
+- 两份文件（`Set_Path.sh` 和 `StartAI.md`）保持同步，任意新增变量后同时更新两者
 
 ## 核心指令
 
